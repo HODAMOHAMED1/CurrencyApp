@@ -22,8 +22,6 @@ class CurrenyVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        currency1Value.delegate = self
-        currency2Value.delegate = self
         viewModel.getAllCurrencies()
         viewModel.reloadTableView = {
             DispatchQueue.main.async {
@@ -130,8 +128,4 @@ extension CurrenyVC: UITableViewDelegate, UITableViewDataSource {
         }
         viewModel.getCurrencyConverted(currency1: btnDrop.titleLabel?.text ?? "", currency2: toCurrenyDrop.titleLabel?.text ?? "")
     }
-}
-extension CurrenyVC : UITextFieldDelegate{
-    
-    
 }

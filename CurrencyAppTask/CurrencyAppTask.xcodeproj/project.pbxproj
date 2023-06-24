@@ -22,6 +22,7 @@
 		573D17BF2A47550B00C1E2D0 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573D17BC2A47550B00C1E2D0 /* Network.swift */; };
 		573D17C02A47550B00C1E2D0 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573D17BD2A47550B00C1E2D0 /* Request.swift */; };
 		573D17C12A47550B00C1E2D0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573D17BE2A47550B00C1E2D0 /* Extensions.swift */; };
+		573D17C32A4756BB00C1E2D0 /* DetailsCurrencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573D17C22A4756BB00C1E2D0 /* DetailsCurrencies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		573D17BC2A47550B00C1E2D0 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		573D17BD2A47550B00C1E2D0 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		573D17BE2A47550B00C1E2D0 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		573D17C22A4756BB00C1E2D0 /* DetailsCurrencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsCurrencies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				573D17B82A4754EB00C1E2D0 /* CurrenyVC.swift */,
+				573D17C22A4756BB00C1E2D0 /* DetailsCurrencies.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				573D17B92A4754EB00C1E2D0 /* CurrenyVC.swift in Sources */,
 				573D17C12A47550B00C1E2D0 /* Extensions.swift in Sources */,
 				573D17C02A47550B00C1E2D0 /* Request.swift in Sources */,
+				573D17C32A4756BB00C1E2D0 /* DetailsCurrencies.swift in Sources */,
 				573D17B72A4754DC00C1E2D0 /* CurrencyConvert.swift in Sources */,
 				573D17BB2A4754F900C1E2D0 /* CurrenyVCViewModel.swift in Sources */,
 				573D17B62A4754DC00C1E2D0 /* Model.swift in Sources */,

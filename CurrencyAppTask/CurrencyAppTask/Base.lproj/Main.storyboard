@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a2s-Sg-t6e">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -202,10 +203,79 @@
             </objects>
             <point key="canvasLocation" x="-161" y="-73"/>
         </scene>
+        <!--Details Currencies-->
+        <scene sceneID="NWL-2A-sq0">
+            <objects>
+                <viewController storyboardIdentifier="DetailsCurrencies" id="zI5-lu-WfU" customClass="DetailsCurrencies" customModule="CurrencyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dfe-hj-9Hr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gLl-TG-qRv">
+                                <rect key="frame" x="0.0" y="109" width="393" height="709"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="18y-fC-Wd4">
+                                        <rect key="frame" x="0.0" y="0.0" width="186.66666666666666" height="709"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="zI5-lu-WfU" id="ei6-Eh-hzw"/>
+                                            <outlet property="delegate" destination="zI5-lu-WfU" id="myu-nR-cHE"/>
+                                        </connections>
+                                    </tableView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="I50-x8-1Yk">
+                                        <rect key="frame" x="206.66666666666663" y="0.0" width="186.33333333333337" height="709"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="zI5-lu-WfU" id="a82-sf-ObZ"/>
+                                            <outlet property="delegate" destination="zI5-lu-WfU" id="jl5-nf-EaY"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvg-Hg-PnH">
+                                <rect key="frame" x="19.999999999999996" y="59" width="61.666666666666657" height="34.333333333333343"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                                <connections>
+                                    <action selector="backBtnAction:" destination="zI5-lu-WfU" eventType="touchUpInside" id="da4-TK-c2F"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qUS-Cd-soE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rvg-Hg-PnH" firstAttribute="top" secondItem="qUS-Cd-soE" secondAttribute="top" id="3eI-ul-g3Z"/>
+                            <constraint firstItem="qUS-Cd-soE" firstAttribute="bottom" secondItem="gLl-TG-qRv" secondAttribute="bottom" id="O6K-QR-U6j"/>
+                            <constraint firstItem="gLl-TG-qRv" firstAttribute="top" secondItem="qUS-Cd-soE" secondAttribute="top" constant="50" id="had-oy-Dyx"/>
+                            <constraint firstItem="qUS-Cd-soE" firstAttribute="trailing" secondItem="gLl-TG-qRv" secondAttribute="trailing" id="vf3-tZ-L5F"/>
+                            <constraint firstItem="gLl-TG-qRv" firstAttribute="leading" secondItem="qUS-Cd-soE" secondAttribute="leading" id="y94-HN-ekO"/>
+                            <constraint firstItem="rvg-Hg-PnH" firstAttribute="leading" secondItem="qUS-Cd-soE" secondAttribute="leading" constant="20" id="yen-BF-Ihs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="historicalTable" destination="18y-fC-Wd4" id="vsc-se-7Zv"/>
+                        <outlet property="otherCurrenciesTable" destination="I50-x8-1Yk" id="sGh-On-DNH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SIH-if-7nd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="549" y="-73"/>
+        </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
