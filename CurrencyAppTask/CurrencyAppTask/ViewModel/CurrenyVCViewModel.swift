@@ -21,7 +21,7 @@ class CurrenyVCViewModel: NSObject {
     }
     func getAllCurrencies(){
 //        currencys = Locale.isoCurrencyCodes
-        let request = Request(path: "latest", queryParameters:[URLQueryItem(name: "access_key", value: "3ae063084634a4aad848c3a58fea5fbd")])
+        let request = Request(path: "latest", queryParameters:[URLQueryItem(name: "access_key", value: "bec5c7e9d41544d4a5e5ce6565a4ebd4")])
         Network.shared.send(request, completion: {
             (result:Result<CurrencyConvert,Error>) in
             print(result)
@@ -37,7 +37,7 @@ class CurrenyVCViewModel: NSObject {
         })
     }
     func getCurrencyConverted(currency1:String,currency2:String){
-        let request = Request(path: "latest", queryParameters:[URLQueryItem(name: "symbols", value: "\(currency1),\(currency2)"), URLQueryItem(name: "access_key", value: "3ae063084634a4aad848c3a58fea5fbd")])
+        let request = Request(path: "latest", queryParameters:[URLQueryItem(name: "symbols", value: "\(currency1),\(currency2)"), URLQueryItem(name: "access_key", value: "bec5c7e9d41544d4a5e5ce6565a4ebd4")])
         Network.shared.send(request, completion: {
             (result:Result<CurrencyConvert,Error>) in
             print(result)

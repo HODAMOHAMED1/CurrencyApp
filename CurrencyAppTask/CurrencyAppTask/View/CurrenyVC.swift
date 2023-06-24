@@ -104,6 +104,15 @@ class CurrenyVC: UIViewController {
     }
     
     @IBAction func detailsClick(_ sender: UIButton) {
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+
+        let detailsVC = mainStoryboard.instantiateViewController(withIdentifier: "DetailsCurrencies") as? DetailsCurrencies
+        detailsVC!.modalPresentationStyle = .overFullScreen
+        detailsVC!.modalTransitionStyle = .crossDissolve
+        detailsVC?.currency1 = btnDrop.titleLabel?.text ?? ""
+        detailsVC?.currency2 = toCurrenyDrop.titleLabel?.text ?? ""
+        detailsVC?.currency1Value = currency1Value.text ?? ""
+        self.present(detailsVC!, animated: true, completion: nil)
     }
 }
 
