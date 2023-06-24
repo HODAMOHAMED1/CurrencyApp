@@ -34,7 +34,8 @@ class CurrenyVC: UIViewController {
                 let finalRate:Double = ((self.viewModel.convertedRate.1)/(self.viewModel.convertedRate.0))
                 if let currency1 = self.currency1Value.text{
                     if let currency1Double = Double(currency1){
-                        self.currency2Value.text = "\(finalRate*currency1Double)"
+                        let currency2Aprox = String(format: "%.5f", finalRate*currency1Double)
+                        self.currency2Value.text = "\(currency2Aprox)"
                     }
                 }
             }
@@ -112,27 +113,28 @@ class CurrenyVC: UIViewController {
         detailsVC?.currency1 = btnDrop.titleLabel?.text ?? ""
         detailsVC?.currency2 = toCurrenyDrop.titleLabel?.text ?? ""
         detailsVC?.currency1Value = currency1Value.text ?? ""
+        detailsVC?.viewModel.ratesData = viewModel.ratesData
         self.present(detailsVC!, animated: true, completion: nil)
     }
 }
 
 extension CurrenyVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.currencys.count
+        return viewModel.currencies.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = viewModel.currencys[indexPath.row]
+        cell.textLabel?.text = viewModel.currencies[indexPath.row]
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if tableView == tblView{
-            btnDrop.setTitle("\(viewModel.currencys[indexPath.row])", for: .normal)
+            btnDrop.setTitle("\(viewModel.currencies[indexPath.row])", for: .normal)
             animate(toogle: false, type: btnDrop)
         }else{
-            toCurrenyDrop.setTitle("\(viewModel.currencys[indexPath.row])", for: .normal)
+            toCurrenyDrop.setTitle("\(viewModel.currencies[indexPath.row])", for: .normal)
             animate(toogle: false, type: toCurrenyDrop)
         }
         viewModel.getCurrencyConverted(currency1: btnDrop.titleLabel?.text ?? "", currency2: toCurrenyDrop.titleLabel?.text ?? "")

@@ -25,6 +25,10 @@ class DetailsCurrencies: UIViewController {
         viewModel.reloadTableView = {
             self.historicalTable.reloadData()
         }
+        viewModel.getOtherCurrenciesRate(baseCurrency: currency1, baseValue: currency1Value)
+        viewModel.reloadOtherCurrenciesTableView = {
+            self.otherCurrenciesTable.reloadData()
+        }
     }
     @IBAction func backBtnAction(_ sender: UIButton) {
         self.dismiss(animated: true)
@@ -32,27 +36,43 @@ class DetailsCurrencies: UIViewController {
 }
 extension DetailsCurrencies:UITableViewDelegate,UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
-        return viewModel.detailsViewModels.count
+        if tableView == historicalTable{
+            return viewModel.detailsViewModels.count
+        }
+        return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        if tableView == historicalTable{
+            return 1
+        }
+        return viewModel.otherCurrenciesModels.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "DetailsCell", for: indexPath) as? DetailsCell else{
             return UITableViewCell()
         }
-        if viewModel.detailsViewModels[indexPath.row].dayNumber == indexPath.row{
-            cell.cellViewModel = viewModel.detailsViewModels[indexPath.row]
+        if tableView == historicalTable{
+            if viewModel.detailsViewModels[indexPath.section].dayNumber == indexPath.section{
+                cell.cellViewModel = viewModel.detailsViewModels[indexPath.section]
+            }
+        }else{
+            cell.cellViewModel = viewModel.otherCurrenciesModels[indexPath.row]
         }
         return cell
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 0{
-            return "Today"
-        }else if section == 1{
-            return "Yesterday"
+        if tableView == historicalTable{
+            if section == 0{
+                return "Today"
+            }else if section == 1{
+                return "Yesterday"
+            }
+            return "Before Yesterday"
         }
-        return "Before Yesterday"
+        return "Other Currencies"
     }
 }

@@ -9,7 +9,8 @@ import Foundation
 class CurrenyVCViewModel: NSObject {
     var reloadTableView: (() -> Void)?
     var updateTextValues: (() -> Void)?
-    var currencys = [String]() {
+    var ratesData = [String: Double]()
+    var currencies = [String]() {
         didSet {
            reloadTableView?()
         }
@@ -21,7 +22,7 @@ class CurrenyVCViewModel: NSObject {
     }
     func getAllCurrencies(){
 //        currencys = Locale.isoCurrencyCodes
-        let request = Request(path: "latest", queryParameters:[URLQueryItem(name: "access_key", value: "bec5c7e9d41544d4a5e5ce6565a4ebd4")])
+        let request = Request(path: "latest", queryParameters:[URLQueryItem(name: "access_key", value: "db058a5d9add43e56513e1f069fddf86")])
         Network.shared.send(request, completion: {
             (result:Result<CurrencyConvert,Error>) in
             print(result)
@@ -29,7 +30,8 @@ class CurrenyVCViewModel: NSObject {
             case .success(let currencyRate):
                 if let rates =  currencyRate.rates{
                     let allCurrencys = rates.keys
-                    self.currencys = Array(allCurrencys.map { String($0) }).sorted()
+                    self.ratesData = rates
+                    self.currencies = Array(allCurrencys.map { String($0) }).sorted()
                 }
             case .failure(let error):
                 print(error)
@@ -37,7 +39,7 @@ class CurrenyVCViewModel: NSObject {
         })
     }
     func getCurrencyConverted(currency1:String,currency2:String){
-        let request = Request(path: "latest", queryParameters:[URLQueryItem(name: "symbols", value: "\(currency1),\(currency2)"), URLQueryItem(name: "access_key", value: "bec5c7e9d41544d4a5e5ce6565a4ebd4")])
+        let request = Request(path: "latest", queryParameters:[URLQueryItem(name: "symbols", value: "\(currency1),\(currency2)"), URLQueryItem(name: "access_key", value: "db058a5d9add43e56513e1f069fddf86")])
         Network.shared.send(request, completion: {
             (result:Result<CurrencyConvert,Error>) in
             print(result)
@@ -56,3 +58,4 @@ class CurrenyVCViewModel: NSObject {
         })
     }
 }
+

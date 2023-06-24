@@ -23,15 +23,79 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1423068C-8F52-494A-994B-7FCBCA3AC78E"
+            uuid = "BFCF9D23-B350-42EA-ACA2-37752149838B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyAppTask/View/DetailsCurrencies.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EC5749E2-B5FE-46CB-8C9F-B5DE4131AB81"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyAppTask/View/DetailsCurrencies.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "86AE5FE8-2DFE-4E9C-819D-3073C2DD3EB8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyAppTask/View/DetailsCurrencies.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5D287FE2-E8DC-43D6-9EC7-DC584B1661DF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyAppTask/View/DetailsCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "cellViewModel"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2E667039-17F6-4B13-918F-1A1E5DBA0C79"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CurrencyAppTask/ViewModel/DetailsCurrenciesViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "getAllHistoricalCurrencies(currency1:currency2:currency1Value:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -39,7 +103,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2BAE6F1C-ACB9-4363-8962-95444C43DA2F"
+            uuid = "4A8FBF89-1E0B-45C8-8823-8B99AA7ED8D6"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -52,7 +116,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "2BAE6F1C-ACB9-4363-8962-95444C43DA2F - b01897250f84c5f7"
+                  uuid = "4A8FBF89-1E0B-45C8-8823-8B99AA7ED8D6 - b01897250f84c5f7"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -64,10 +128,170 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "46"
                   endingLineNumber = "46"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  uuid = "4A8FBF89-1E0B-45C8-8823-8B99AA7ED8D6 - b01897250f84c5f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;CurrencyAppTask.CurrencyConvert, Swift.Error&gt;) -&gt; () in CurrencyAppTask.DetailsCurrenciesViewModel.getAllHistoricalCurrencies(currency1: Swift.String, currency2: Swift.String, currency1Value: Swift.String) -&gt; ()"
+                  moduleName = "CurrencyAppTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hodamohamed/Documents/CurrencyAppTask/CurrencyAppTask/CurrencyAppTask/ViewModel/DetailsCurrenciesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "644">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F47F8C6A-CA91-4C86-B0B8-BA227C3E6D8D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyAppTask/ViewModel/DetailsCurrenciesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "getAllHistoricalCurrencies(currency1:currency2:currency1Value:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A26360D3-142C-419B-9E30-EE5A6A0C7A65"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyAppTask/ViewModel/DetailsCurrenciesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "getAllHistoricalCurrencies(currency1:currency2:currency1Value:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "15608FED-9CFB-48E1-921C-23A840B6297D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyAppTask/ViewModel/DetailsCurrenciesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "getAllHistoricalCurrencies(currency1:currency2:currency1Value:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5CFE1F89-CD1B-4A24-A1ED-933CF3750DE0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyAppTask/ViewModel/DetailsCurrenciesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "getAllHistoricalCurrencies(currency1:currency2:currency1Value:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5CFE1F89-CD1B-4A24-A1ED-933CF3750DE0 - b01897250f84c510"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;CurrencyAppTask.CurrencyConvert, Swift.Error&gt;) -&gt; () in CurrencyAppTask.DetailsCurrenciesViewModel.getAllHistoricalCurrencies(currency1: Swift.String, currency2: Swift.String, currency1Value: Swift.String) -&gt; ()"
+                  moduleName = "CurrencyAppTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hodamohamed/Documents/CurrencyAppTask/CurrencyAppTask/CurrencyAppTask/ViewModel/DetailsCurrenciesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "676">
+               </Location>
+               <Location
+                  uuid = "5CFE1F89-CD1B-4A24-A1ED-933CF3750DE0 - b01897250f84c510"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;CurrencyAppTask.CurrencyConvert, Swift.Error&gt;) -&gt; () in CurrencyAppTask.DetailsCurrenciesViewModel.getAllHistoricalCurrencies(currency1: Swift.String, currency2: Swift.String, currency1Value: Swift.String) -&gt; ()"
+                  moduleName = "CurrencyAppTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hodamohamed/Documents/CurrencyAppTask/CurrencyAppTask/CurrencyAppTask/ViewModel/DetailsCurrenciesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "960">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8079DDE9-818A-4A1F-BC64-2BE6492D3001"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyAppTask/ViewModel/DetailsCurrenciesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "getAllHistoricalCurrencies(currency1:currency2:currency1Value:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C36086C7-E73E-4F98-BB2A-1289B7243C45"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyAppTask/ViewModel/DetailsCurrenciesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "getAllHistoricalCurrencies(currency1:currency2:currency1Value:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C36086C7-E73E-4F98-BB2A-1289B7243C45 - b01897250f84c573"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;CurrencyAppTask.CurrencyConvert, Swift.Error&gt;) -&gt; () in CurrencyAppTask.DetailsCurrenciesViewModel.getAllHistoricalCurrencies(currency1: Swift.String, currency2: Swift.String, currency1Value: Swift.String) -&gt; ()"
+                  moduleName = "CurrencyAppTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hodamohamed/Documents/CurrencyAppTask/CurrencyAppTask/CurrencyAppTask/ViewModel/DetailsCurrenciesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
                   offsetFromSymbolStart = "1316">
                </Location>
                <Location
-                  uuid = "2BAE6F1C-ACB9-4363-8962-95444C43DA2F - b01897250f84c5f7"
+                  uuid = "C36086C7-E73E-4F98-BB2A-1289B7243C45 - b01897250f84c573"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -77,11 +301,139 @@
                   urlString = "file:///Users/hodamohamed/Documents/CurrencyAppTask/CurrencyAppTask/CurrencyAppTask/ViewModel/DetailsCurrenciesViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
                   offsetFromSymbolStart = "1388">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E2241505-965E-4415-9155-9550DDE7CBF9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyAppTask/ViewModel/DetailsCurrenciesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "getAllHistoricalCurrencies(currency1:currency2:currency1Value:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E2241505-965E-4415-9155-9550DDE7CBF9 - b01897250f84c531"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;CurrencyAppTask.CurrencyConvert, Swift.Error&gt;) -&gt; () in CurrencyAppTask.DetailsCurrenciesViewModel.getAllHistoricalCurrencies(currency1: Swift.String, currency2: Swift.String, currency1Value: Swift.String) -&gt; ()"
+                  moduleName = "CurrencyAppTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hodamohamed/Documents/CurrencyAppTask/CurrencyAppTask/CurrencyAppTask/ViewModel/DetailsCurrenciesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "992">
+               </Location>
+               <Location
+                  uuid = "E2241505-965E-4415-9155-9550DDE7CBF9 - b01897250f84c531"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;CurrencyAppTask.CurrencyConvert, Swift.Error&gt;) -&gt; () in CurrencyAppTask.DetailsCurrenciesViewModel.getAllHistoricalCurrencies(currency1: Swift.String, currency2: Swift.String, currency1Value: Swift.String) -&gt; ()"
+                  moduleName = "CurrencyAppTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hodamohamed/Documents/CurrencyAppTask/CurrencyAppTask/CurrencyAppTask/ViewModel/DetailsCurrenciesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "1276">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "331F58B3-3041-4585-A92F-9191517AA1FA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyAppTask/ViewModel/DetailsCurrenciesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "getAllHistoricalCurrencies(currency1:currency2:currency1Value:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "331F58B3-3041-4585-A92F-9191517AA1FA - 2d6dd3f077f50f0b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in CurrencyAppTask.DetailsCurrenciesViewModel.getAllHistoricalCurrencies(currency1: Swift.String, currency2: Swift.String, currency1Value: Swift.String) -&gt; ()"
+                  moduleName = "CurrencyAppTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hodamohamed/Documents/CurrencyAppTask/CurrencyAppTask/CurrencyAppTask/ViewModel/DetailsCurrenciesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "331F58B3-3041-4585-A92F-9191517AA1FA - ef6f758ccbe21a51"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (CurrencyAppTask.DetailsCellViewModel, CurrencyAppTask.DetailsCellViewModel) -&gt; Swift.Bool in closure #2 () -&gt; () in CurrencyAppTask.DetailsCurrenciesViewModel.getAllHistoricalCurrencies(currency1: Swift.String, currency2: Swift.String, currency1Value: Swift.String) -&gt; ()"
+                  moduleName = "CurrencyAppTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hodamohamed/Documents/CurrencyAppTask/CurrencyAppTask/CurrencyAppTask/ViewModel/DetailsCurrenciesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0DC3F402-5CF7-456E-BBE4-2082B042E5BF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyAppTask/ViewModel/DetailsCurrenciesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "getAllHistoricalCurrencies(currency1:currency2:currency1Value:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6731BE81-8203-4889-B711-9E14FEDF08F4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyAppTask/View/DetailsCurrencies.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

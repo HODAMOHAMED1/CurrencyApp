@@ -7,15 +7,19 @@
 
 import Foundation
 class DetailsCurrenciesViewModel: NSObject {
-    var todayData = (0.0,0.0)
-    var yesterDayData = (0.0,0.0)
-    var beforeYesterDayData = (0.0,0.0)
+    var ratesData = [String: Double]()
+    var otherCurrenciesModels = [DetailsCellViewModel](){
+        didSet {
+           reloadOtherCurrenciesTableView?()
+        }
+    }
     var detailsViewModels = [DetailsCellViewModel](){
         didSet {
            reloadTableView?()
         }
     }
     var reloadTableView: (() -> Void)?
+    var reloadOtherCurrenciesTableView: (() -> Void)?
     func getAllHistoricalCurrencies(currency1:String,currency2:String,currency1Value:String){
         let dispatchGroup = DispatchGroup()
         var vms = [DetailsCellViewModel]()
@@ -31,7 +35,7 @@ class DetailsCurrenciesViewModel: NSObject {
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd"
             let dateString = dateFormatter.string(from: currentDate)
-            let request = Request(path: dateString, queryParameters:[URLQueryItem(name: "symbols", value: "\(currency1),\(currency2)"), URLQueryItem(name: "access_key", value: "bec5c7e9d41544d4a5e5ce6565a4ebd4")])
+            let request = Request(path: dateString, queryParameters:[URLQueryItem(name: "symbols", value: "\(currency1),\(currency2)"), URLQueryItem(name: "access_key", value: "db058a5d9add43e56513e1f069fddf86")])
             dispatchGroup.enter()
             Network.shared.send(request, completion: {
                 (result:Result<CurrencyConvert,Error>) in
@@ -62,4 +66,25 @@ class DetailsCurrenciesViewModel: NSObject {
             self.detailsViewModels = vms.sorted(by: {$0.dayNumber<$1.dayNumber})
         }
     }
+    func getOtherCurrenciesRate(baseCurrency:String,baseValue:String){
+        let popular_10 = ["USD","EUR","JPY","GBP","AUD","CAD","CHF","CNH","HKD","NZD"]
+        var vms = [DetailsCellViewModel]()
+        for item in popular_10{
+            if ratesData.keys.contains(item){
+                if let rate1 =  ratesData["\(baseCurrency)"]{
+                    if let rate2 =  ratesData[item]{
+                        let finalRate:Double = rate2/rate1
+                        if let currency1Double = Double(baseValue){
+                        let currency2Aprox = String(format: "%.5f", finalRate*currency1Double)
+                            var vm = DetailsCellViewModel(currencyValue: "",dayNumber: 0)
+                            vm.currencyValue = "\(baseValue)\(baseCurrency) = \(currency2Aprox)\(item)"
+                            vms.append(vm)
+                        }
+                    }
+                }
+            }
+        }
+        otherCurrenciesModels = vms
+    }
 }
+
